@@ -57,7 +57,7 @@ import { MenuRestritoComponent } from './restrito/menu-restrito/menu-restrito.co
     RestritoRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule  
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
