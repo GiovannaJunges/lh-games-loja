@@ -30,14 +30,14 @@ export class ProdutoService {
 
   atualizaProduto(id:any, produto:Produto):Observable<Produto[]>{
 
-    const urlAtualizar = `${this.url}?id=${id}`;
+    const urlAtualizar = `${this.url}/${id}`;
     return this._httpClient.put<Produto[]>(urlAtualizar, produto);
     
   }
 
   removerProduto(id:any):Observable<Produto[]>{
 
-    const urlDeletar = `${this.url}?id=${id}`;
+    const urlDeletar = `${this.url}/${id}`;
     console.log(urlDeletar);
     return this._httpClient.delete<Produto[]>(urlDeletar);
     
